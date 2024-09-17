@@ -1,0 +1,29 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; 
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  
+  section {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+  
+
+  section .weather {
+    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    text-align: center;
+  }
+  
