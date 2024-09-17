@@ -1,14 +1,19 @@
-import".././WeatherForcast.css";
-cost WeatherForecast =(props) => {
-    return (
-        <div className="weather">
-              <h2>Day of the Week</h2>  
-    )
-}
+import ".././WeatherForcast.css";
+const WeatherForecast = (props) => {
+  return (
+    <div className="weather">
+      <h2>{props.weather.day}</h2>
+      <img src={props.weather.img} alt={props.weather.altImg} />
+      <p>
+        <span>conditions: </span>
+        {props.weather.conditions}
+      </p>
+      <p>
+        <span>time: </span>
+        {props.weather.time}
+      </p>
+    </div>
+  );
+};
 
-
-
-  <img src="" alt="" />
-  <p><span>conditions: </span>current weather conditions</p>
-  <p><span>time: </span>time of day</p>
-</div>
+export default WeatherForecast;
